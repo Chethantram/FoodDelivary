@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+*{
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    font-family: "Poppins", serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+.active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #0d102e;
+    
+}
+.home-header{
+    position: relative;
+    width:90%;
+    height: 34vw;
+    background-image: url(/header.jpg);
+    margin: 45px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1.1rem; 
+
+} 
+@media (max-width: 768px) {
+    .home-header{
+        height: 50vw;
+        width: 95%;
+    }
+}
+@media (max-width: 640px) {
+    .home-header{
+        height: 60vw;
+    }
+}
+.explore-menu ::-webkit-scrollbar{
+    display: none;
+}
+.menu-active{
+    padding: 2px;
+    border-radius: 50%;
+    border:4px solid #e85d04 ;
+}
+.login{
+    background-color: #00000090;
+}
+.form-input{
+    outline: none;
+    border: 2px solid grey;
+    padding: 8px;
+    border-radius: 10px;
+    
+}
+.drop-down{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.profile:hover .drop-down{
+    width: 130px;
+    background-color:#fff2ef;
+    outline: none;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+   
+}
+/* w-30 mt-5 bg-red-50 outline-none border-2 border-gray-400 absolute z-1 flex flex-col gap-2 p-2 */
